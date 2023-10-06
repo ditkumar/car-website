@@ -1,0 +1,327 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: var(--primary-color);
+    font-family: Roboto,sans-serif;
+}
+:root {
+    --primary-color:#000;
+    --font-color:#ffff;
+}
+p{
+    color: white;
+    line-height: 2rem;
+}
+h1,h2,h3,h4{
+    color: white;
+}
+.wrapper{
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/d2322952c821563c9989f1aa/pexels-photo-3136673.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header{
+border-bottom: 1px solid white;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.search-bar{
+    position: relative;
+}
+input#search {
+    height: 40px;
+    width: 210px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+input::placeholder{
+    color:white;
+    font-size: 1rem;
+}
+/* .container-main{
+    width: 90%;
+} */
+.nav-bar i{
+    font-size: 2rem;
+    color: white;
+}
+.nav li:hover{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+    transition: .3s ease-in-out;
+}
+li.active{
+    color: orangered !important;
+    border-bottom: 2px solid orangered;
+}
+i.fa-solid.fa-magnifying-glass {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.side-nav {
+    background: black;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    display: none;
+}
+.nav{
+padding: 40px;
+}
+.nav li{
+    color: white;
+    font-size: 1.5rem;
+list-style: none;
+padding: 15px;
+}
+i.fa-solid.fa-xmark {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px;
+}
+.banner-content{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 300px;
+}
+.banner-para{
+    text-align: center;
+    margin-top: 20px;
+}
+.up-arrow i{
+    color: white;
+    font-size: 3rem;
+    margin-top: 20px;
+    color: orangered;
+}
+.up-arrow{
+    text-align: center;
+}
+.intro-heading{
+    text-align:center ;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.intro-content{
+    text-align: center;
+}
+.box i{
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.box{
+    padding: 40px;
+    text-align: center;
+}
+.intro-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.box-heading{
+    color: white;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+.comon-btn{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border: 2px solid orangered;
+    color: orangered;
+    border-radius: 50px;
+    font-weight: 700;
+    width: 150px;
+    cursor: pointer;
+}
+.comon-btn:hover{
+    background-color: orangered;
+    color: white;
+}
+.insurance-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.insurance-box{
+    padding: 40px;
+    width: 50%;
+}
+.insurance-box-1{
+    background-color: orangered;
+    color: white;
+    padding: 40px;
+    width: 50%;
+}
+.number li{
+    line-height: 2rem;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-image img{
+    width: 100%;
+    height:auto ;
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+}
+.gallery-image img:hover{
+    filter: grayscale(0);
+}
+.curser {
+    position: fixed;
+    padding: 24px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border-radius: 100%;
+    opacity: 0;
+    scale: 0;
+    border: 2px solid white;
+}
+.dot {
+    border: 2px solid orangered;
+    padding: 4px;
+    border-radius: 10px;
+}
+.faq-heading,.faq-heading-2,.faq-heading-3,.faq-heading-4{
+    background-color: orangered;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-2,.content-3,.content-4{
+    display: none;
+    padding: 20px;
+
+}
+/* .plus{
+
+} */
+.content{
+    display: block;
+    padding: 20px;
+}
+.faq{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.image-text img{
+    width: 100%;
+    height: auto;
+}
+.image-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-text{
+    width: 100%;
+    padding: 40px;
+}
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footrer-text{
+    width: 50%;
+}
+.form{
+    width: 40%;
+    padding: 40px;
+}
+input[type="email"] {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    /* border-bottom: 2px solid white; */
+    /* border: none; */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+   .intro-box{
+    flex-direction: column;
+   }
+   .footer-main{
+    flex-direction: column;
+   }
+   .form{
+    width: 100%;
+    padding: 20px;
+   }
+   textarea#w3review {
+    width: 100%;
+}
+.insurance-main{
+    flex-direction: column;
+}
+.insurance-box {
+    padding: 20px;
+    width: 100%;
+}
+.insurance-box-1 {
+    background-color: orangered;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+.image-flex{
+    flex-direction: column;
+}
+.img-text {
+    width: 100%;
+    padding: 20px;
+}
+.gallery{
+    flex-direction: column;
+}
+.container{
+    width: 90%;
+}
+.box {
+    padding: 20px;
+    text-align: center;
+}
+.footrer-text {
+    width: 100%;
+    padding: 20px;
+}
+.banner-content {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0px;
+}
+  }
